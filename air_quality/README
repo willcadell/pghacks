@@ -1,0 +1,17 @@
+One way to scrape ASP applications,
+but it didn't work for us unfortunately.
+http://www.mishainthecloud.com/2009/12/screen-scraping-aspnet-application-in.html
+
+current atmospheric data from Omineca region
+http://envistaweb.env.gov.bc.ca/DynamicTable.aspx?G_ID=152
+
+sites that have SO2 readings:
+  - Pine River Gas Plant_60
+  - Pine River Hasler_60
+  - Prince George CBC Transmitter
+  - Prince George Gladstone School
+  - Prince George Jail
+  - Prince George Marsulex Acid Plant
+  - Prince George Plaza 400
+  - Taylor South Hill_60
+  - Taylor Townsite_60
