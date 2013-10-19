@@ -17,12 +17,12 @@ var mapProp = {
 var map=new google.maps.Map(document.getElementById("googleMap")
   ,mapProp);
 
-var pr_gasplant  = new google.maps.LatLng(55.5750, -121.9208);
+var pr_gasplant  = new google.maps.LatLng(55.572304, -121.94365);
 var pr_hasler    = new google.maps.LatLng(55.6056, -121.9722);
 var pg_cbc       = new google.maps.LatLng(53.9033, -122.7036);
 var pg_gladstone = new google.maps.LatLng(53.8592, -122.7633);
 var pg_jail      = new google.maps.LatLng(53.9072, -122.7136);
-var pg_marsulex  = new google.maps.LatLng(53.8416, -122.7344);
+var pg_marsulex  = new google.maps.LatLng(53.84182, -122.73358);
 var pg_plaza400  = new google.maps.LatLng(53.9133, -122.7411);
 var taylor_south = new google.maps.LatLng(56.1058, -120.6633);
 var taylor_town  = new google.maps.LatLng(56.1506, -120.6861);
@@ -46,17 +46,65 @@ var heatmapData = [
   });
   heatmap.setMap(map);
 
+
+
+  var marker = new google.maps.Marker({
+      position: pr_gasplant,
+      map: map,
+      title: 'Spectra Gas - SO2'
+  });
+
+  var marker = new google.maps.Marker({
+      position: pr_hasler,
+      map: map,
+      title: 'Hasler - SO2'
+  });
+
   var marker = new google.maps.Marker({
       position: pg_cbc,
       map: map,
-      title: 'PG CBC'
+      title: 'CBC - SO2'
   });
 
   var marker2 = new google.maps.Marker({
       position: pg_gladstone,
       map: map,
-      title: 'Gladstone'
+      title: 'Gladstone - SO2'
   });
+
+  var marker2 = new google.maps.Marker({
+      position: pg_jail,
+      map: map,
+      title: 'Jail - SO2'
+  });
+
+  var marker2 = new google.maps.Marker({
+      position: pg_marsulex,
+      map: map,
+      title: 'Marsulex - SO2'
+  });
+
+  var marker2 = new google.maps.Marker({
+      position: pg_plaza400,
+      map: map,
+      title: 'Plaza 400 - SO2'
+  });
+
+  var marker2 = new google.maps.Marker({
+      position: taylor_south,
+      map: map,
+      title: 'South Taylor - SO2'
+  });
+
+  var marker2 = new google.maps.Marker({
+      position: taylor_town,
+      map: map,
+      title: 'Taylor - SO2'
+  });
+
+
+
+
 
 google.maps.event.addListener(map, 'zoom_changed', function () {
 			var foo = map.getZoom() - 6;
